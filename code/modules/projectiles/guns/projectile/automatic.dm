@@ -137,6 +137,7 @@
 /obj/item/gun/projectile/automatic/rifle/nt12
 	name = "service rifle"
 	desc = "A semi-automatic carbine, the NT Mk.12 is mass-produced by NanoTrasen for use by its various internal security forces. Uses 5.56 rounds."
+	icon = 'icons/obj/guns/arifle.dmi' //temp?
 	icon_state = "servicerifle"
 	item_state = "servicerifle"
 	w_class = ITEMSIZE_LARGE
