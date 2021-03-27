@@ -183,6 +183,20 @@
 /obj/item/ammo_magazine/a10mm/empty
 	initial_ammo = 0
 
+/obj/item/ammo_magazine/nt12
+	name = "NT12 magazine (5.56mm)"
+	icon_state = "5.56"
+	origin_tech = list(TECH_COMBAT = 2)
+	mag_type = MAGAZINE
+	caliber = "a556"
+	matter = list(DEFAULT_WALL_MATERIAL = 1800)
+	ammo_type = /obj/item/ammo_casing/a556
+	max_ammo = 15
+	multiple_sprites = 1
+
+/obj/item/ammo_magazine/n12/empty
+	initial_ammo = 0
+
 /obj/item/ammo_magazine/a556
 	name = "magazine (5.56mm)"
 	icon_state = "5.56"
