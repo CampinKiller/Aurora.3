@@ -137,9 +137,9 @@
 /obj/item/gun/projectile/automatic/rifle/nt12
 	name = "service rifle"
 	desc = "A semi-automatic carbine, the NT Mk.12 is mass-produced by NanoTrasen for use by its various internal security forces. Uses 5.56 rounds."
-	icon = 'icons/obj/guns/arifle.dmi' //temp?
-	icon_state = "servicerifle"
-	item_state = "servicerifle"
+	icon = 'icons/obj/guns/arifle.dmi' //temp
+	icon_state = "arifle"
+	item_state = "arifle"
 	w_class = ITEMSIZE_LARGE
 	force = 10
 	caliber = "a556"
@@ -148,10 +148,14 @@
 	fire_sound = 'sound/weapons/gunshot/gunshot_rifle.ogg'
 	slot_flags = SLOT_BACK
 	load_method = MAGAZINE
-	magazine_type = /obj/item/ammo_magazine/a556 //make a smaller mag ammunition,boxes
-	allowed_magazines = list(/obj/item/ammo_magazine/a556)
+	magazine_type = /obj/item/ammo_magazine/nt12
+	allowed_magazines = list(/obj/item/ammo_magazine/nt12)
 	auto_eject = 1
 	auto_eject_sound = 'sound/weapons/smg_empty_alarm.ogg'
+
+	firemodes = list(
+		list(mode_name="semiauto", burst = 1, fire_delay=10),
+	)
 
 /obj/item/gun/projectile/automatic/rifle/sts35
 	name = "assault rifle"
