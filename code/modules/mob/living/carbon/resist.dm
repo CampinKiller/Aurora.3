@@ -88,6 +88,11 @@
 	displaytime = breakouttime / 600 //Minutes
 
 	var/mob/living/carbon/human/H = src
+
+	//Remove stamina -- if this doesn't work may need to be a func in the H shit to get
+	var/stam = H.stamina
+	stam -= 25
+
 	if(istype(H) && H.gloves && istype(H.gloves,/obj/item/clothing/gloves/rig))
 		breakouttime /= 2
 		displaytime /= 2
