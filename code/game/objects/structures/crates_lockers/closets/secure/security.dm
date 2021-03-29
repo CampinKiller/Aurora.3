@@ -119,6 +119,8 @@
 	..()
 	//Supply
 	new /obj/item/storage/box/flashbangs(src)
+	new /obj/item/gun/projectile/automatic/rifle/nt12(src)
+	new /obj/item/ammo_magazine/nt12(src)
 	//Appearance
 	if(prob(50))
 		new /obj/item/storage/backpack/security(src)
@@ -192,6 +194,8 @@
 	new /obj/item/clothing/head/helmet/hos(src)
 	new /obj/item/clothing/suit/security/hos(src)
 	//Tools
+	new /obj/item/gun/projectile/automatic/rifle/nt12(src)
+	new /obj/item/ammo_magazine/nt12(src)
 	new /obj/item/clothing/glasses/sunglasses/sechud/aviator(src)
 	new /obj/item/device/radio/headset/heads/hos(src)
 	new /obj/item/device/radio/headset/heads/hos/alt(src)
